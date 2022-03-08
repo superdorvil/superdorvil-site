@@ -3,14 +3,14 @@ import {
   ButtonText
 } from './Elements';
 
-function SideButton({buttonPressed, description, currentMode}) {
+function SideButton({buttonPressed, description, appMode}) {
   return (
     <Button
       onClick={(e) => {
         e.preventDefault();
         buttonPressed(description);
       }}>
-      <ButtonText selected={currentMode === description}>
+      <ButtonText selected={appMode === description}>
         {description}
       </ButtonText>
     </Button>

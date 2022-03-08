@@ -14,6 +14,7 @@ function ProfilePicture() {
         src={pfp}
         width={70}
         height={50}
+        priority
       />
       <Name>Dorvil Gabriel</Name>
       <Job>Full Stack Blockchain Developer</Job>

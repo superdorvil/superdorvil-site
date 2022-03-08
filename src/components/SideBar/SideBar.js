@@ -3,11 +3,11 @@ import ProfilePicture from './ProfilePicture';
 import SideBarButtons from './SideBarButtons';
 import SocialMediaIcons from '../SocialMediaIcons';
 
-function SideBar() {
+function SideBar({appMode, sideButtonPressed}) {
   return (
     <Container>
       <ProfilePicture />
-      <SideBarButtons />
+      <SideBarButtons appMode={appMode} buttonPressed={sideButtonPressed} />
       <SocialMediaIcons />
     </Container>
   )

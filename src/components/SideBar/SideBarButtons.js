@@ -2,48 +2,40 @@ import {
   SideBarContainer,
 } from './Elements';
 import SideButton from './SideButton';
+import {STATES} from '../../constants';
 
-const appMode = {
-  home: 'Home',
-  portfolio: 'Portfolio',
-  skills: 'Skills',
-  contact: 'Contact',
-  freedom: 'Freedom',
-  about: 'About',
-};
-
-function SideBarButtons({buttonPressed, currentMode}) {
+function SideBarButtons({buttonPressed, appMode}) {
   return (
     <SideBarContainer>
       <SideButton
         buttonPressed={buttonPressed}
-        description={appMode.home}
-        currentMode={currentMode}
+        description={STATES.appMode.home}
+        appMode={appMode}
       />
       <SideButton
         buttonPressed={buttonPressed}
-        description={appMode.portfolio}
-        currentMode={currentMode}
+        description={STATES.appMode.portfolio}
+        appMode={appMode}
       />
       <SideButton
         buttonPressed={buttonPressed}
-        description={appMode.skills}
-        currentMode={currentMode}
+        description={STATES.appMode.skills}
+        appMode={appMode}
       />
       <SideButton
         buttonPressed={buttonPressed}
-        description={appMode.contact}
-        currentMode={currentMode}
+        description={STATES.appMode.contact}
+        appMode={appMode}
       />
       {/*<SideButton
         buttonPressed={buttonPressed}
-        description={appMode.freedom}
-        currentMode={currentMode}
+        description={STATES.appMode.freedom}
+        appMode={appMode}
       />*/}
       <SideButton
         buttonPressed={buttonPressed}
-        description={appMode.about}
-        currentMode={currentMode}
+        description={STATES.appMode.about}
+        appMode={appMode}
       />
     </SideBarContainer>
   );

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+import {COLORS} from '../../constants';
 
 export const Container = styled.div`
-  border-right-color: #FFFFFF;
-  border-right-width: 100px;
   border-right: 1px solid #FFFFFF;
   height: 100vh;
   width: 20vw;
@@ -49,5 +48,6 @@ export const Button = styled.button`
 `;
 
 export const ButtonText = styled.p`
-  color: ${props => props.selected ? '#FF00000' : '#FFFFFF'};
+  color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF'};
+  font-family: ${props => props.selected ? 'Roboto-Bold' : 'Roboto-Regular'};
 `;
