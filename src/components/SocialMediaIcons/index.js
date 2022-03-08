@@ -1,8 +1,3 @@
-function SocialMediaIcons() {
-  return (
-    <>
-    </>
-  )
-}
+import SocialMediaIcons from './SocialMediaIcons';
 
 export default SocialMediaIcons;

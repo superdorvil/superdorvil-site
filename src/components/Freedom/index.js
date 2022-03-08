@@ -1,8 +1,3 @@
-function Freedom() {
-  return (
-    <>
-    </>
-  )
-}
+import Freedom from './Freedom';
 
 export default Freedom;

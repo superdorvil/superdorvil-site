@@ -1,8 +1,3 @@
-function ContactMe() {
-  return (
-    <>
-    </>
-  )
-}
+import ContactMe from './ContactMe';
 
 export default ContactMe;

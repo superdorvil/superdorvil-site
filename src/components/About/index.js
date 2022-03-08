@@ -1,8 +1,3 @@
-function About() {
-  return (
-    <>
-    </>
-  )
-}
+import About from './About';
 
 export default About;

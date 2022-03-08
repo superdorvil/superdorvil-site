@@ -6,7 +6,7 @@ function EthBackground({children}) {
   return (
     <Container>
       <Image
-        alt="Mountains"
+        alt="Ethereum Background???"
         src={ethBG}
         layout="fill"
         objectFit="cover"

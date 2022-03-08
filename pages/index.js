@@ -9,6 +9,7 @@ function SuperDorvil() {
       <>
       <SideBar />
       <MainPage />
+      <SocialMediaIcons />
       </>
     </EthBackground>
   )
