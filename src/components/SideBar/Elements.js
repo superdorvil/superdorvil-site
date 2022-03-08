@@ -3,51 +3,62 @@ import {COLORS} from '../../constants';
 
 export const Container = styled.div`
   border-right: 1px solid #FFFFFF;
-  height: 100vh;
-  width: 20vw;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 275px;
 `;
 
 export const PFPContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: green;
+  align-self: center;
+  overflow: hidden;
+  margin-top: 62.5px;
 `;
 
 export const SideBarContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 `;
 
 export const Name = styled.p`
+  margin-top: 16px;
   color: #FFFFFF;
   font-family: Roboto-Bold;
-  font-size: 1.5vw;
-  padding-top: .75vw;
+  font-size: 22px;
   text-align: center;
 `;
 
 export const Job = styled.p`
   color: #FFFFFF99;
   font-family: Roboto-Regular;
-  font-size: .75vw;
-  margin-top: .75vw;
+  font-size: 12px;
+  margin-top: 12px;
   text-align: center;
 `;
 
 export const Button = styled.button`
-  font-size: 2.5vw;
   cursor: pointer;
   background: transparent;
   border: none;
   &:hover {
     transition: all 0.1s ease-in-out;
     background: #FFFFFF;
-    color: #000000;
   }
 `;
 
 export const ButtonText = styled.p`
-  color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF'};
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF99'};
   font-family: ${props => props.selected ? 'Roboto-Bold' : 'Roboto-Regular'};
+  &:hover {
+    color: ${COLORS.BAD_ASS_ORANGE}
+  }
 `;

@@ -1,9 +1,5 @@
 import Image from 'next/image';
-import {
-  PFPContainer,
-  Name,
-  Job,
-} from './Elements';
+import {PFPContainer} from './Elements';
 import pfp from '../../images/pfp.jpg';
 
 function ProfilePicture() {
@@ -12,12 +8,13 @@ function ProfilePicture() {
       <Image
         alt="Profile Picture ???"
         src={pfp}
-        width={70}
-        height={50}
+        width={125}
+        height={125}
         priority
+        quality={100}
+        layout="fixed"
+        objectFit="cover"
       />
-      <Name>Dorvil Gabriel</Name>
-      <Job>Full Stack Blockchain Developer</Job>
     </PFPContainer>
   );
 }

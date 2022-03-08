@@ -3,13 +3,15 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex: 1;
-  align-self: flex-end;
+  align-items: flex-end;
+  align-self: center;
   justify-content: center;
   flex-direction: row;
-  cursor: pointer;
+  margin-bottom: 32px;
 `;
 
 export const Button = styled.div`
+  cursor: pointer;
   padding-left: .65vw;
   padding-right: .65vw;
 `;
