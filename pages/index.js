@@ -15,8 +15,7 @@ function SuperDorvil() {
         appMode={appMode}
         projectMode={projectMode}
         projectPressed={(mode) => setProjectMode(mode)}
-      >
-      </MainPage>
+      />
     </EthBackground>
   )
 }

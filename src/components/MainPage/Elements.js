@@ -4,7 +4,6 @@ import {COLORS} from '../../constants';
 export const Container = styled.div`
   padding-left: 7vw;
   display: flex;
-  align-self: baseline;
   flex: 1;
   border-bottom: 1px solid;
   border-bottom-color: ${props => props.borderVisible === true ? '#FFFFFF' : 'transparent'};

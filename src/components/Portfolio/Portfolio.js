@@ -1,7 +1,6 @@
 function Portfolio() {
   return (
-    <>
-    </>
+    <p>Hola Portfolio</p>
   )
 }
 

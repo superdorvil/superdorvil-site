@@ -19,6 +19,8 @@ export const PFPContainer = styled.div`
   align-self: center;
   overflow: hidden;
   margin-top: 62.5px;
+  border: 2px solid;
+  border-color: ${COLORS.BAD_ASS_ORANGE};
 `;
 
 export const SideBarContainer = styled.div`
@@ -55,7 +57,8 @@ export const Button = styled.button`
 
 export const ButtonText = styled.p`
   font-size: 28px;
-  margin-bottom: 12px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF99'};
   font-family: ${props => props.selected ? 'Roboto-Bold' : 'Roboto-Regular'};
   &:hover {

@@ -1,7 +1,6 @@
 function ContactMe() {
   return (
-    <>
-    </>
+    <p>Hola Contact</p>
   )
 }
 
