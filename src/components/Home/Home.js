@@ -1,5 +1,6 @@
 import {
   Container,
+  InnerContainer,
   Title,
   SubTitleContainer,
   SubTitle
@@ -9,6 +10,7 @@ import Button from '../Button';
 function Home() {
   return (
     <Container>
+      <InnerContainer>
       <Title>I Create Killer</Title>
       <Title>Blockchain DAPPS</Title>
       <SubTitleContainer>
@@ -17,6 +19,7 @@ function Home() {
         <SubTitle>at a time</SubTitle>
       </SubTitleContainer>
       <Button description="Hire Me" />
+      </InnerContainer>
     </Container>
   )
 }

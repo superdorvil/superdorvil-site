@@ -12,6 +12,6 @@ export const Container = styled.div`
 
 export const Button = styled.div`
   cursor: pointer;
-  padding-left: .65vw;
-  padding-right: .65vw;
+  padding-left: 10px;
+  padding-right: 10px;
 `;

@@ -6,9 +6,20 @@ import {
 import ProjectButton from './ProjectButton';
 import {STATES} from '../../constants';
 
-function Header({title, projectMode, projectPressed, projectButtonsVisible}) {
+function Header({
+  title,
+  visible,
+  projectMode,
+  projectPressed,
+  projectButtonsVisible,
+  borderVisible
+}) {
+  if (!visible) {
+      return<></>
+  }
+
   return (
-    <HeaderContainer>
+    <HeaderContainer borderVisible={borderVisible}>
       <Title>{title}</Title>
       {projectButtonsVisible ?
         <ProjectContainer>

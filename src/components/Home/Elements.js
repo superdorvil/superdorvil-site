@@ -2,12 +2,15 @@ import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
 export const Container = styled.div`
-  flex-direction: column;
   display: flex;
-  align-self: center;
-  align-items: baseline;
-  justify-content: center;
-  padding-bottom: 6vw;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+`;
+
+export const InnerContainer = styled.div`
+  margin-bottom: 6vw;
+  margin-left: 6vw;
 `;
 
 export const SubTitleContainer = styled.div`

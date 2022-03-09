@@ -7,6 +7,7 @@ import Portfolio from '../Portfolio';
 import Header from './Header';
 import {
   Container,
+  Divider
 } from './Elements';
 import {STATES} from '../../constants';
 
@@ -45,13 +46,15 @@ function MainPage({appMode, projectMode, projectPressed}) {
   }
 
   return (
-    <Container borderVisible={title !== ''}>
+    <Container>
       <Header
+        visible={title !== ''}
         projectButtonsVisible={title === portfolio}
         title={title === portfolio ? projectMode : title}
         projectMode={projectMode}
         projectPressed={projectPressed}
       />
+      <Divider borderVisible={title !== ''} />
       {screen}
     </Container>
   );

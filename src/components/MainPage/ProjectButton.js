@@ -4,12 +4,11 @@ import {
 } from './Elements';
 
 function ProjectButton({project, projectMode, projectPressed}) {
-  console.log(projectMode + '     ' + project);
   return (
     <Button
       onClick={(e) => {
         e.preventDefault();
-        buttonPressed(project);
+        projectPressed(project);
       }}>
       <Project selected={projectMode === project}>{project}</Project>
     </Button>

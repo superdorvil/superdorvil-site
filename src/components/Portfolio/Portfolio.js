@@ -1,6 +1,8 @@
+import {} from './Elements';
+
 function Portfolio() {
   return (
-    <p>Hola Portfolio</p>
+    <></>
   )
 }
 

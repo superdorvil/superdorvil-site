@@ -6,7 +6,7 @@ import {STATES} from '../src/constants';
 
 function SuperDorvil() {
   const [appMode, setAppMode] = useState(STATES.appMode.home);
-  const [projectMode, setProjectMode] = useState(STATES.projectMode.none);
+  const [projectMode, setProjectMode] = useState(STATES.projectMode.lavaNFT);
 
   return (
     <EthBackground>
@@ -21,3 +21,10 @@ function SuperDorvil() {
 }
 
 export default SuperDorvil;
+
+/*
+lavaNFT: 'LavaLamp NFTs',
+timeIsLife: 'Time Is Life',
+lavaDAO: 'LavaLamp DAO',
+ethDAO: 'Ethereum DAO',
+*/

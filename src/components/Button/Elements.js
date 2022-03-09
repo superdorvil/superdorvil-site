@@ -17,10 +17,10 @@ export const Container = styled.button`
 `;
 
 export const Description = styled.p`
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
   font-size: 2vw;
   color: white;
   font-family: Roboto-Bold;
