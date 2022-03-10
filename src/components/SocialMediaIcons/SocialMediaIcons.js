@@ -1,13 +1,19 @@
-import {Container} from './Elements';
+import {Container, ButtonContainer} from './Elements';
 import SocialIcon from './SocialIcon';
 import {ICONS} from '../../constants';
 
 function SocialMediaIcons() {
   return (
     <Container>
-      <SocialIcon icon={ICONS.GITHUB} />
-      <SocialIcon icon={ICONS.TWITTER} />
-      <SocialIcon icon={ICONS.LINKEDIN} />
+      <ButtonContainer>
+        <SocialIcon icon={ICONS.GITHUB} />
+      </ButtonContainer>
+      <ButtonContainer>
+        <SocialIcon icon={ICONS.TWITTER} />
+      </ButtonContainer>
+      <ButtonContainer>
+        <SocialIcon icon={ICONS.LINKEDIN} />
+      </ButtonContainer>
     </Container>
   )
 }

@@ -15,7 +15,6 @@ export const PFPContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  background-color: green;
   align-self: center;
   overflow: hidden;
   margin-top: 62.5px;

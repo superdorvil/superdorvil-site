@@ -10,8 +10,11 @@ export const Container = styled.div`
   margin-bottom: 32px;
 `;
 
-export const Button = styled.div`
-  cursor: pointer;
+export const ButtonContainer = styled.div`
   padding-left: 10px;
   padding-right: 10px;
+`;
+
+export const Button = styled.div`
+  cursor: pointer;
 `;

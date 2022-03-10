@@ -2,36 +2,37 @@ import Image from 'next/image';
 import {
   Container,
   ButtonContainer,
-  InfoContainer,
+  ProjectContainer,
   InnerContainer,
-  ProjectImage,
-  Info,
+  Skills,
 } from './Elements';
 import Button from '../Button';
-import {
-  lavaNftInfo,
-  lavaDaoInfo,
-  timeIsLifeInfo,
-  ethDaoInfo
-} from './Data';
+import ProjectImage from './ProjectImage';
+import TextBox from '../TextBox';
+import About from './About';
+import Data from './Data';
 import { useSelector } from 'react-redux';
+import SocialIcon from '../SocialMediaIcons/SocialIcon';
+import {ICONS} from '../../constants';
 
 function Portfolio() {
   const data = [];
   const buttons = [];
   let portfolioData;
-  const projectMode = useSelector((state) => state.mode.projectMode);
-
-  /*Data.lavaDAO.forEach((d, i) => {
-    data.push(<Info>{d}</Info>)
-  });*/
-
-  if (true) {
-
-  }
+  const projectModeIndex = useSelector((state) => state.mode.projectModeIndex);
 
   return (
     <Container>
+      <InnerContainer>
+        <ProjectContainer>
+          <ProjectImage />
+          <About description={Data[projectModeIndex].about} />
+          <About description={Data[projectModeIndex].about2} />
+        </ProjectContainer>
+        <ButtonContainer>
+          <Button description="Github" extra={<SocialIcon icon={ICONS.GITHUB} />} />
+        </ButtonContainer>
+      </InnerContainer>
     </Container>
   )
 }

@@ -21,8 +21,8 @@ function Header({title}) {
         <ProjectContainer>
           <ProjectButton project={STATES.projectMode.lavaNFT} />
           <ProjectButton project={STATES.projectMode.timeIsLife} />
-          <ProjectButton project={STATES.projectMode.lavaDAO} />
-          <ProjectButton project={STATES.projectMode.ethDAO} />
+          {/*<ProjectButton project={STATES.projectMode.lavaDAO} />
+          <ProjectButton project={STATES.projectMode.ethDAO} />*/}
         </ProjectContainer> :
         <></>
       }

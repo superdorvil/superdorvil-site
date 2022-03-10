@@ -1,9 +1,10 @@
 import {Container, Description} from './Elements';
 
-function Button({description}) {
+function Button({description, extra}) {
   return (
     <Container>
-      <Description>{description}</Description>
+      <Description extra={extra}>{description}</Description>
+      {extra}
     </Container>
   );
 }
