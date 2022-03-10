@@ -14,7 +14,7 @@ export const InnerContainer = styled.div`
 
 export const ImageContainer = styled.div`
   margin-top: 1.5vw;
-  width: 28vw;
+  width: 400px;
   border: 2px solid;
   border-color: ${COLORS.BAD_ASS_ORANGE};
   border-radius: 1.5vw;
@@ -39,16 +39,8 @@ export const AboutContainer = styled.div`
   margin-top: 1vw;
 `;
 
-export const SkillsContainer = styled.div`
-
-`;
-
 export const AboutDescription = styled.div`
   padding: 1vw;
   color: #FFFFFF;
   text-align: center;
-`;
-
-export const Skills = styled.div`
-
 `;

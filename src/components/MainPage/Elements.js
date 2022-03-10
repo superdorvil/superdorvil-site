@@ -27,22 +27,21 @@ export const Divider = styled.div`
 
 export const Title = styled.p`
   text-align: center;
-  margin-top: 2vw;
-  font-size: 4.5vw;
+  margin-top: 30px;
+  font-size: 75px;
   color: ${COLORS.BAD_ASS_ORANGE};
 `;
 
 export const Project = styled.p`
   color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF99'};
   font-family: ${props => props.selected ? 'Roboto-Bold' : 'Roboto-Regular'};
-  font-size: 1.75vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: .75vw;
-  padding-bottom: .75vw;
-  margin-top: .25vw;
-  margin-bottom: 1vw;
-  border-radius: 1vw;
+  font-size: 26.25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  border-radius: 15px;
   text-decoration-color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : 'transparent'};
   text-decoration: ${props => props.selected ? 'underline' : ''};
   &:hover {
