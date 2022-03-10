@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import {
   HeaderContainer,
   Title,
@@ -6,43 +7,22 @@ import {
 import ProjectButton from './ProjectButton';
 import {STATES} from '../../constants';
 
-function Header({
-  title,
-  visible,
-  projectMode,
-  projectPressed,
-  projectButtonsVisible,
-  borderVisible
-}) {
-  if (!visible) {
-      return<></>
+function Header({title}) {
+  const appMode = useSelector((states) => states.mode.appMode);
+
+  if (appMode === STATES.appMode.home) {
+      return <></>;
   }
 
   return (
-    <HeaderContainer borderVisible={borderVisible}>
+    <HeaderContainer>
       <Title>{title}</Title>
-      {projectButtonsVisible ?
+      {appMode === STATES.appMode.portfolio ?
         <ProjectContainer>
-          <ProjectButton
-            project={STATES.projectMode.lavaNFT}
-            projectMode={projectMode}
-            projectPressed={projectPressed}
-          />
-          <ProjectButton
-            project={STATES.projectMode.timeIsLife}
-            projectMode={projectMode}
-            projectPressed={projectPressed}
-          />
-          <ProjectButton
-            project={STATES.projectMode.lavaDAO}
-            projectMode={projectMode}
-            projectPressed={projectPressed}
-          />
-          <ProjectButton
-            project={STATES.projectMode.ethDAO}
-            projectMode={projectMode}
-            projectPressed={projectPressed}
-          />
+          <ProjectButton project={STATES.projectMode.lavaNFT} />
+          <ProjectButton project={STATES.projectMode.timeIsLife} />
+          <ProjectButton project={STATES.projectMode.lavaDAO} />
+          <ProjectButton project={STATES.projectMode.ethDAO} />
         </ProjectContainer> :
         <></>
       }

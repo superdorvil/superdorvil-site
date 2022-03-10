@@ -3,13 +3,13 @@ import ProfilePicture from './ProfilePicture';
 import SideBarButtons from './SideBarButtons';
 import SocialMediaIcons from '../SocialMediaIcons';
 
-function SideBar({appMode, sideButtonPressed}) {
+function SideBar() {
   return (
     <Container>
       <ProfilePicture />
       <Name>Dorvil Gabriel</Name>
       <Job>Full Stack Blockchain Developer</Job>
-      <SideBarButtons appMode={appMode} buttonPressed={sideButtonPressed} />
+      <SideBarButtons />
       <SocialMediaIcons />
     </Container>
   )

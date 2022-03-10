@@ -1,30 +1,18 @@
-import {useState} from 'react';
+import store from '../src/redux/store';
+import { Provider } from 'react-redux';
 import EthBackground from '/src/components/EthBackground';
 import MainPage from '/src/components/MainPage';
 import SideBar from '/src/components/SideBar';
-import {STATES} from '../src/constants';
 
 function SuperDorvil() {
-  const [appMode, setAppMode] = useState(STATES.appMode.home);
-  const [projectMode, setProjectMode] = useState(STATES.projectMode.lavaNFT);
-
   return (
-    <EthBackground>
-      <SideBar appMode={appMode} sideButtonPressed={(mode) => setAppMode(mode)} />
-      <MainPage
-        appMode={appMode}
-        projectMode={projectMode}
-        projectPressed={(mode) => setProjectMode(mode)}
-      />
-    </EthBackground>
+    <Provider store={store}>
+      <EthBackground>
+        <SideBar />
+        <MainPage />
+      </EthBackground>
+    </Provider>
   )
 }
 
 export default SuperDorvil;
-
-/*
-lavaNFT: 'LavaLamp NFTs',
-timeIsLife: 'Time Is Life',
-lavaDAO: 'LavaLamp DAO',
-ethDAO: 'Ethereum DAO',
-*/

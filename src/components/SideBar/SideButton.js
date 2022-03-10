@@ -2,13 +2,18 @@ import {
   Button,
   ButtonText
 } from './Elements';
+import { useSelector, useDispatch } from 'react-redux';
+import { setAppMode } from '../../redux/mode/modeActions';
 
-function SideButton({buttonPressed, description, appMode}) {
+function SideButton({description}) {
+  const dispatch = useDispatch();
+  const appMode = useSelector((state) => state.mode.appMode);
+
   return (
     <Button
       onClick={(e) => {
         e.preventDefault();
-        buttonPressed(description);
+        dispatch(setAppMode(description))
       }}>
       <ButtonText selected={appMode === description}>
         {description}

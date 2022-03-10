@@ -1,3 +1,4 @@
+import { useSelector, useDispatch } from 'react-redux';
 import About from '../About';
 import Contact from '../ContactMe';
 import Freedom from '../Freedom'; // Future section, ignore for now
@@ -11,19 +12,19 @@ import {
 } from './Elements';
 import {STATES} from '../../constants';
 
-function MainPage({appMode, projectMode, projectPressed}) {
-  const portfolio = 'portfolio';
-  let title = '';
+function MainPage({projectPressed}) {
+  const mode = useSelector((state) => state.mode);
   let screen;
+  let title;
 
-  switch (appMode) {
+  switch (mode.appMode) {
     case STATES.appMode.home:
       title = '';
       screen = <Home />;
       break;
     case STATES.appMode.portfolio:
-      title = portfolio;
-      screen = <Portfolio projectMode={projectMode} />;
+      title = mode.projectMode;
+      screen = <Portfolio />;
       break;
     case STATES.appMode.skills:
       title = 'Skills & Experience';
@@ -47,14 +48,8 @@ function MainPage({appMode, projectMode, projectPressed}) {
 
   return (
     <Container>
-      <Header
-        visible={title !== ''}
-        projectButtonsVisible={title === portfolio}
-        title={title === portfolio ? projectMode : title}
-        projectMode={projectMode}
-        projectPressed={projectPressed}
-      />
-      <Divider borderVisible={title !== ''} />
+      <Header title={title} />
+      <Divider borderVisible={mode.appMode !== STATES.appMode.home} />
       {screen}
     </Container>
   );
