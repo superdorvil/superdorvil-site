@@ -8,7 +8,6 @@ import {
 } from './Elements';
 import Button from '../Button';
 import ProjectImage from './ProjectImage';
-import TextBox from '../TextBox';
 import About from './About';
 import Data from './Data';
 import { useSelector } from 'react-redux';

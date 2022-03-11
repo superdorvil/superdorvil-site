@@ -33,9 +33,9 @@ export const ButtonContainer = styled.div`
 
 export const AboutContainer = styled.div`
   width: 60vw;
-  border: 1px solid;
+  border: 2px solid;
   border-color: ${COLORS.BAD_ASS_ORANGE};
-  border-radius: 1.5vw;
+  border-radius: 6vw;
   margin-top: 1vw;
 `;
 
