@@ -3,6 +3,7 @@ import Image from 'next/image';
 import {ImageContainer} from './Elements';
 import lavaLampNFTs from '../../images/LavaLampNFTs.png';
 import timeIsLife from '../../images/TimeIsLife.png';
+import superDorvilSite from '../../images/SuperDorvilSite.jpg';
 import {STATES} from '../../constants';
 
 function ProjectImage() {
@@ -16,6 +17,9 @@ function ProjectImage() {
       break;
     case STATES.projectMode.timeIsLife:
       src = timeIsLife;
+      break;
+    case STATES.projectMode.superdorvil:
+      src = superDorvilSite;
       break;
     case STATES.projectMode.lavaDAO:
       src = timeIsLife;

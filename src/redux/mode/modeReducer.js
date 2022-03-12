@@ -55,11 +55,14 @@ const modeReducer = (state = initialState, action) => {
         case STATES.projectMode.timeIsLife:
           projectModeIndex = 1;
           break;
-        case STATES.projectMode.lavaDAO:
+        case STATES.projectMode.superdorvil:
           projectModeIndex = 2;
           break;
-        case STATES.projectMode.ethDAO:
+        case STATES.projectMode.lavaDAO:
           projectModeIndex = 3;
+          break;
+        case STATES.projectMode.ethDAO:
+          projectModeIndex = 4;
           break;
         default:
           projectModeIndex = 0;

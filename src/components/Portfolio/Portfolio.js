@@ -26,7 +26,7 @@ function Portfolio() {
         <ProjectContainer>
           <ProjectImage />
           <About description={Data[projectModeIndex].about} />
-          <About description={Data[projectModeIndex].about2} />
+          <About description={Data[projectModeIndex].skills} />
         </ProjectContainer>
         <ButtonContainer>
           <Button description="Github" extra={<SocialIcon icon={ICONS.GITHUB} />} />
