@@ -72,7 +72,7 @@ function ContactMe() {
   return (
     <Container>
       <FriendlyMessageContainer>
-        <FriendlyMessage>I'll make you a killer Blockchain DAPP</FriendlyMessage>
+        <FriendlyMessage>I will make you a killer Blockchain DAPP</FriendlyMessage>
         <FriendlyMessage>Hit me up!!!</FriendlyMessage>
       </FriendlyMessageContainer>
       <Name {...nameProps} placeholder="Enter Name: " />

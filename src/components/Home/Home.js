@@ -14,7 +14,7 @@ function Home() {
       <Title>I Create Killer</Title>
       <Title>Blockchain DAPPS</Title>
       <SubTitleContainer>
-        <SubTitle>I'm a Fullstack Solidity Blockchain Engineer</SubTitle>
+        <SubTitle>I am a Fullstack Solidity Blockchain Engineer</SubTitle>
         <SubTitle>Liberating the world one DAPP</SubTitle>
         <SubTitle>at a time</SubTitle>
       </SubTitleContainer>
