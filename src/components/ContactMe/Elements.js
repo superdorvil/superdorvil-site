@@ -38,6 +38,7 @@ export const Name = styled.input`
   padding-right: 3vw;
   background-color: transparent;
   font-family: Roboto-Regular;
+  font-size: 1.5vw;
 `;
 
 export const Email = styled.input`
