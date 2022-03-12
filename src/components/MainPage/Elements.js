@@ -30,6 +30,7 @@ export const Title = styled.p`
   margin-top: 30px;
   font-size: 75px;
   color: ${COLORS.BAD_ASS_ORANGE};
+  font-family: Roboto-Regular;
 `;
 
 export const Project = styled.p`
@@ -49,6 +50,7 @@ export const Project = styled.p`
     transition: all 0.1s ease-in-out;
     color: ${COLORS.BAD_ASS_ORANGE};
   }
+  font-family: Roboto-Regular;
 `;
 
 export const Button = styled.button`
