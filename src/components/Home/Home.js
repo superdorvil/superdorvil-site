@@ -18,7 +18,7 @@ function Home() {
         <SubTitle>Liberating the world one DAPP</SubTitle>
         <SubTitle>at a time</SubTitle>
       </SubTitleContainer>
-      <Button description="Hire Me" />
+      <Button description="Contact Me" />
       </InnerContainer>
     </Container>
   )

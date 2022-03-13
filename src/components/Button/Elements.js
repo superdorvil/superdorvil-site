@@ -14,15 +14,15 @@ export const Container = styled.button`
     background: #FFFFFF;
     transition: all 0.1s ease-in-out;
   }
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 40px;
+  padding-right: 40px;
 `;
 
 export const Description = styled.p`
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-right: ${props => props.extra ? 2 : 0}vw;
-  font-size: 2vw;
+  font-size: 20px;
   color: white;
   font-family: Roboto-Bold;
   &:hover {

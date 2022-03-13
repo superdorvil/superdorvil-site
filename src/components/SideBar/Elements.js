@@ -7,6 +7,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 275px;
+  @media only screen and (max-width: 1000px) {
+    width: 225px;
+  }
 `;
 
 export const PFPContainer = styled.div`
@@ -17,15 +20,21 @@ export const PFPContainer = styled.div`
   border-radius: 16px;
   align-self: center;
   overflow: hidden;
-  margin-top: 62.5px;
+  margin-top: 60px;
   border: 2px solid;
   border-color: ${COLORS.BAD_ASS_ORANGE};
+  @media only screen and (max-height: 650px) {
+    margin-top: 30px;
+  }
 `;
 
 export const SideBarContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  @media only screen and (max-height: 650px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Name = styled.p`
@@ -34,6 +43,7 @@ export const Name = styled.p`
   font-family: Roboto-Bold;
   font-size: 22px;
   text-align: center;
+
 `;
 
 export const Job = styled.p`
@@ -62,5 +72,10 @@ export const ButtonText = styled.p`
   font-family: ${props => props.selected ? 'Roboto-Bold' : 'Roboto-Regular'};
   &:hover {
     color: ${COLORS.BAD_ASS_ORANGE}
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 24px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
 `;

@@ -14,6 +14,11 @@ import {COLORS} from '../../constants';
      fill: #FFFFFF;
      background-color: ${COLORS.BAD_ASS_ORANGE};
    }
+   @media only screen and (max-height: 1000px) {
+     width: 40px;
+     height: 40px;
+     border-radius: 40px;
+   }
  `;
 
  export const IconPath = styled.path``;

@@ -13,6 +13,9 @@ export const Container = styled.div`
 export const ButtonContainer = styled.div`
   padding-left: 10px;
   padding-right: 10px;
+  @media only screen and (max-height: 1000px) {
+    margin-top: 6px;
+  }
 `;
 
 export const Button = styled.div`

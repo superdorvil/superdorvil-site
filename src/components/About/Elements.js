@@ -5,28 +5,25 @@ export const Container = styled.div`
   display: flex;
   align-self: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 export const CollageContainer = styled.div`
-  margin-top: 6vw;
-  width: 400px;
-  border: 0px solid;
+  margin-top: 50px;
+  width: 55vw;
   border-color: ${COLORS.BAD_ASS_ORANGE};
-  border-radius: 1.5vw;
-  overflow: hidden;
-  margin-right: 2vw;
 `;
 
 export const Message = styled.p`
-  width: 400px;
+  width: 70vw;
   border: 1px solid;
   border-color: ${COLORS.BAD_ASS_ORANGE};
-  border-radius: 1.5vw;
+  border-radius: 30px;
   color: #FFFFFF;
-  padding: 1.5vw;
-  margin-top:6vw;
-  margin-left: 2vw;
+  padding: 20px;
+  margin-top: 30px;
   background-color: transparent;
   font-family: Roboto-Regular;
-  font-size: 14.5px;
+  font-size: 14px;
+  margin-bottom: 20px;
 `;

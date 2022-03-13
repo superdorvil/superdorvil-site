@@ -15,4 +15,5 @@ export const Languages = styled.p`
   font-size: 1.5vw;
   margin-left: 12vw;
   margin-top: 1vw;
+  width: 60vw;
 `;

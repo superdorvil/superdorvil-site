@@ -21,8 +21,11 @@ export const ProjectContainer = styled.div`
 export const Divider = styled.div`
   height: 1px;
   display: flex;
-  width: 100vw - 275px;
+  padding-left: 275px;
   background-color: ${props => props.borderVisible === true ? '#FFFFFF' : 'transparent'};
+  @media only screen and (max-width: 1000px) {
+    padding-left: 225px;
+  }
 `;
 
 export const Title = styled.p`
@@ -31,12 +34,18 @@ export const Title = styled.p`
   font-size: 75px;
   color: ${COLORS.BAD_ASS_ORANGE};
   font-family: Roboto-Regular;
+  @media only screen and (max-width: 1000px) {
+    font-size: 50px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 40px;
+  }
 `;
 
 export const Project = styled.p`
   color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF99'};
   font-family: ${props => props.selected ? 'Roboto-Bold' : 'Roboto-Regular'};
-  font-size: 26.25px;
+  font-size: 24px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 4px;
@@ -51,6 +60,12 @@ export const Project = styled.p`
     color: ${COLORS.BAD_ASS_ORANGE};
   }
   font-family: Roboto-Regular;
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 12px;
+  }
 `;
 
 export const Button = styled.button`
