@@ -1,37 +1,16 @@
 import Image from 'next/image';
-import {
-  Container,
-  ButtonContainer,
-  ProjectContainer,
-  InnerContainer,
-  Skills,
-} from './Elements';
-import Button from '../Button';
-import ProjectImage from './ProjectImage';
-import About from './About';
+import {Container} from './Elements';
+import Project from './Project';
 import Data from './Data';
-import { useSelector } from 'react-redux';
-import SocialIcon from '../SocialMediaIcons/SocialIcon';
-import {ICONS} from '../../constants';
+import Header from '../Header';
 
 function Portfolio() {
-  const data = [];
-  const buttons = [];
-  let portfolioData;
-  const projectModeIndex = useSelector((state) => state.mode.projectModeIndex);
-
   return (
     <Container>
-      <InnerContainer>
-        <ProjectContainer>
-          <ProjectImage />
-          <About description={Data[projectModeIndex].about} />
-          <About description={Data[projectModeIndex].skills} />
-        </ProjectContainer>
-        <ButtonContainer>
-          <Button description="Github" extra={<SocialIcon icon={ICONS.GITHUB} />} />
-        </ButtonContainer>
-      </InnerContainer>
+      <Header title="Portfolio" />
+      <Project {...Data[0]} />
+      <Project {...Data[1]} />
+      <Project {...Data[2]} dividerInvisible={true} />
     </Container>
   )
 }

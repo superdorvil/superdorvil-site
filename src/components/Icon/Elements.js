@@ -4,8 +4,8 @@ import {COLORS} from '../../constants';
  export const IconSVG = styled.svg`
    display: 'inline-block';
    verticalAlign: 'middle';
-   width: 48px;
-   height: 48px;
+   width: ${props => props.small ? 32 : 48}px;
+   height: ${props => props.small ? 32 : 48}px;
    fill: ${COLORS.BAD_ASS_ORANGE};
    background-color: #FFFFFF;
    border-radius: 48px;
@@ -14,10 +14,10 @@ import {COLORS} from '../../constants';
      fill: #FFFFFF;
      background-color: ${COLORS.BAD_ASS_ORANGE};
    }
-   @media only screen and (max-height: 1000px) {
-     width: 40px;
-     height: 40px;
-     border-radius: 40px;
+   @media only screen and (max-width: 850px) {
+     width: ${props => props.small ? 4 : 6}vw;
+     height: ${props => props.small ? 4 : 6}vw;
+     border-radius: ${props => props.small ? 4 : 6}vw;
    }
  `;
 

@@ -1,7 +1,4 @@
-import {
-  AboutContainer,
-  AboutDescription,
-} from './Elements';
+import {AboutContainer, AboutDescription} from './Elements';
 
 function About({description}) {
   return (

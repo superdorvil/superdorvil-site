@@ -1,6 +1,4 @@
-import {
-  SideBarContainer,
-} from './Elements';
+import {SideBarContainer} from './Elements';
 import SideButton from './SideButton';
 import {STATES} from '../../constants';
 

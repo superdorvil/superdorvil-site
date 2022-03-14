@@ -3,12 +3,14 @@ import {
   Container,
   ContactInfoContainer,
   FriendlyMessageContainer,
+  InnerContainer,
   Name,
   Email,
   Phone,
   Message,
   FriendlyMessage,
 } from './Elements';
+import Header from '../Header';
 import Button from '../Button';
 
 function useNameInput(defaultValue) {
@@ -71,6 +73,8 @@ function ContactMe() {
 
   return (
     <Container>
+      <Header title="Contact Me" />
+      <InnerContainer>
       <FriendlyMessageContainer>
         <FriendlyMessage>I will make you a killer Blockchain DAPP</FriendlyMessage>
         <FriendlyMessage>Hit me up!!!</FriendlyMessage>
@@ -82,6 +86,7 @@ function ContactMe() {
       </ContactInfoContainer>
       <Message {...messageProps} placeholder="Enter Message: " />
       <Button description="Submit" />
+      </InnerContainer>
     </Container>
   )
 }

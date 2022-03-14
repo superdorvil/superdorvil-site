@@ -1,18 +1,16 @@
 import Image from 'next/image';
 import {PFPContainer} from './Elements';
-import pfp from '../../images/pfp.jpg';
+import profilePicture from '../../images/ProfilePicture.jpg';
 
 function ProfilePicture() {
   return (
     <PFPContainer>
       <Image
         alt="Profile Picture ???"
-        src={pfp}
-        width={125}
-        height={125}
+        src={profilePicture}
         priority
         quality={100}
-        layout="fixed"
+        layout="intrinsic"
         objectFit="cover"
       />
     </PFPContainer>

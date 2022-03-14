@@ -1,9 +1,6 @@
-import {
-  Button,
-  ButtonText
-} from './Elements';
-import { useSelector, useDispatch } from 'react-redux';
-import { setAppMode } from '../../redux/mode/modeActions';
+import {Button, ButtonText} from './Elements';
+import {useSelector, useDispatch} from 'react-redux';
+import {setAppMode} from '../../redux/mode/modeActions';
 
 function SideButton({description}) {
   const dispatch = useDispatch();

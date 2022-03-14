@@ -8,23 +8,23 @@ export const Container = styled.button`
   flex-direction: row;
   background: ${COLORS.BAD_ASS_ORANGE};
   border: 0px;
-  border-radius: 5vw;
+  border-radius: 3vw;
   cursor: pointer;
   &:hover {
     background: #FFFFFF;
     transition: all 0.1s ease-in-out;
   }
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 `;
 
 export const Description = styled.p`
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: ${props => props.extra ? 2 : 0}vw;
-  font-size: 20px;
+  padding-top: 1.75vw;
+  padding-bottom: 1.75vw;
+  padding-right: ${props => props.icon ? 2 : 0}vw;
+  font-size: 1.75vw;
   color: white;
-  font-family: Roboto-Bold;
+  font-family: Montserrat-Bold;
   &:hover {
     color: ${COLORS.BAD_ASS_ORANGE};
     transition: all 0.1s ease-in-out;

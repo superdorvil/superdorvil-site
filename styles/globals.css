@@ -21,11 +21,11 @@ a {
 
 /* Regular */
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: local('Roboto'), url(./fonts/Roboto-Regular.ttf) format('truetype');
+    font-family: 'Montserrat-Regular';
+    src: local('Montserrat'), url(./fonts/Montserrat-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: local('Roboto'), url(./fonts/Roboto-Bold.ttf) format('truetype');
+    font-family: 'Montserrat-Bold';
+    src: local('Montserrat'), url(./fonts/Montserrat-Bold.ttf) format('truetype');
 }

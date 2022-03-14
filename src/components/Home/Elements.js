@@ -2,15 +2,9 @@ import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex: 1;
-`;
-
-export const InnerContainer = styled.div`
-  margin-bottom: 6vw;
-  margin-left: 6vw;
+  padding-top: 12vw;
+  margin-bottom: 35vw;
+  margin-left: 8vw;
 `;
 
 export const SubTitleContainer = styled.div`
@@ -21,12 +15,12 @@ export const SubTitleContainer = styled.div`
 export const Title = styled.p`
   font-size: 6vw;
   color: ${COLORS.BAD_ASS_ORANGE};
-  font-family: Roboto-Regular;
+  font-family: Montserrat-Regular;
 `;
 
 export const SubTitle = styled.p`
-  margin-top: .5vw;
-  font-size: 1.75vw;
+  margin-top: .4vw;
+  font-size: 1.65vw;
   color: #FFFFFF99;
-  font-family: Roboto-Regular;
+  font-family: Montserrat-Regular;
 `;
