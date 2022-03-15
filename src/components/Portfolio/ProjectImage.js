@@ -1,14 +1,11 @@
-import {useSelector} from 'react-redux';
 import Image from 'next/image';
 import {ImageContainer} from './Elements';
 
-function ProjectImage({image}) {
-  const projectMode = useSelector((state) => state.mode.projectMode);
-
+function ProjectImage({image, title}) {
   return (
     <ImageContainer>
       <Image
-        alt={projectMode}
+        alt={title}
         src={image}
         priority
         quality={100}

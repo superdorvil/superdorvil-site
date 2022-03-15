@@ -10,7 +10,7 @@ function Project({about, skills, title, image, dividerInvisible}) {
     <ProjectContainer>
       <Title>{title}</Title>
       <ProjectContainer>
-        <ProjectImage image={image} />
+        <ProjectImage image={image} title={title} />
         <About description={about} />
         <About description={skills} />
       </ProjectContainer>
