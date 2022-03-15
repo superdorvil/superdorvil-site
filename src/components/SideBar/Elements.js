@@ -29,10 +29,10 @@ export const PFPContainer = styled.div`
 export const SideBarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 4vw;
   align-items: center;
-  @media only screen and (max-height: 650px) {
-    margin-top: 6vw;
+  @media only screen and (max-height: 700px) {
+    margin-top: 2.5vw;
   }
 `;
 
