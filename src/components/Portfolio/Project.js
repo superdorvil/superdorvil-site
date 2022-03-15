@@ -5,7 +5,7 @@ import ProjectImage from './ProjectImage';
 import About from './About';
 import {ICONS} from '../../constants';
 
-function Project({about, skills, title, image, dividerInvisible}) {
+function Project({about, skills, title, image, github, dividerInvisible}) {
   return (
     <ProjectContainer>
       <Title>{title}</Title>
@@ -14,7 +14,7 @@ function Project({about, skills, title, image, dividerInvisible}) {
         <About description={about} />
         <About description={skills} />
       </ProjectContainer>
-      <ButtonContainer>
+      <ButtonContainer href={github}>
         <Button description="Github" icon={ICONS.GITHUB} />
       </ButtonContainer>
       <Divider dividerInvisible={dividerInvisible} />

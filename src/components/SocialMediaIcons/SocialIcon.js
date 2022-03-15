@@ -1,11 +1,11 @@
 import {Button} from './Elements';
 import Icon from '../Icon';
 
-function SocialIcon({icon, small}) {
+function SocialIcon({icon, small, href}) {
 
   if (icon) {
     return(
-      <Button>
+      <Button href={href}>
         <Icon icon={icon} small={small} />
       </Button>
     )

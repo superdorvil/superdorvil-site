@@ -19,6 +19,6 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.a`
   cursor: pointer;
 `;
