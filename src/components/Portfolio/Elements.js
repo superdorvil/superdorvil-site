@@ -3,7 +3,7 @@ import {COLORS} from '../../constants';
 
 export const Container = styled.div`
   align-items: center;
-  margin-bottom: 5vw;
+  padding-bottom: 5vw;
 `;
 
 export const ImageContainer = styled.div`

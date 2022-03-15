@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
 export const Container = styled.div`
-  margin-bottom: 15vw;
+  padding-bottom: 15vw;
 `;
 
 export const Skill = styled.p`

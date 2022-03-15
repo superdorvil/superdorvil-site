@@ -1,9 +1,10 @@
 import {Container, Skill, Languages} from './Elements';
 import Header from '../Header';
+import {STATES} from '../../constants';
 
 function Skills() {
   return (
-    <Container>
+    <Container id={STATES.appMode.skills}>
       <Header title="Skills & Experience" />
       <Skill>Blockchain Development</Skill>
       <Languages>Solidity, Truffle, Ganache, IPFS, Web3.js</Languages>

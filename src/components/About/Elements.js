@@ -10,7 +10,7 @@ export const InnerContainer = styled.div`
 `;
 
 export const CollageContainer = styled.div`
-  margin-top: 4vw;
+  padding-top: 4vw;
   width: 60vw;
   border-color: ${COLORS.BAD_ASS_ORANGE};
 `;
@@ -32,8 +32,8 @@ export const Message = styled.p`
 `;
 
 export const Footer = styled.p`
-  margin-top: 10vw;
-  margin-bottom: 5vw;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
   color: #FFFFFF99;
   font-size: 1.5vw;
 `;

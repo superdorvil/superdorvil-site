@@ -1,9 +1,10 @@
+import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
 export const Container = styled.div`
   padding-top: 12vw;
-  margin-bottom: 35vw;
+  padding-bottom: 35vw;
   margin-left: 8vw;
 `;
 
@@ -11,6 +12,8 @@ export const SubTitleContainer = styled.div`
   margin-top: 2vw;
   margin-bottom: 3vw;
 `;
+
+export const ButtonContainer = styled(LinkS)``;
 
 export const Title = styled.p`
   font-size: 6vw;

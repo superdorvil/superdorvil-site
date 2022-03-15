@@ -1,3 +1,4 @@
+import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
@@ -29,6 +30,7 @@ export const SideBarContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  align-items: center;
   @media only screen and (max-height: 650px) {
     margin-top: 6vw;
   }
@@ -53,26 +55,17 @@ export const Job = styled.p`
   }
 `;
 
-export const Button = styled.button`
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  &:hover {
-    transition: all 0.1s ease-in-out;
-    background: #FFFFFF;
-  }
-`;
-
-export const ButtonText = styled.p`
+export const SideButton = styled(LinkS)`
   font-size: 28px;
   padding-bottom: 6px;
   padding-top: 6px;
-  color: ${props => props.selected ? COLORS.BAD_ASS_ORANGE : '#FFFFFF99'};
-  font-family: ${props => props.selected ? 'Montserrat-Bold' : 'Montserrat-Regular'};
-  &:hover {
-    color: ${COLORS.BAD_ASS_ORANGE}
-  }
+  color: #FFFFFF99;
+  font-family: Montserrat-Regular;
   @media only screen and (max-width: 700px) {
     font-size: 20px;
+  }
+  &.active {
+    font-family: Montserrat-Bold;
+    color: ${COLORS.BAD_ASS_ORANGE};
   }
 `;

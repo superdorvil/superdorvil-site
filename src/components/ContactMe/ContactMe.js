@@ -12,6 +12,7 @@ import {
 } from './Elements';
 import Header from '../Header';
 import Button from '../Button';
+import {STATES} from '../../constants';
 
 function useNameInput(defaultValue) {
   const [name, setName] = useState('');
@@ -72,7 +73,7 @@ function ContactMe() {
   const messageProps = useMessageInput();
 
   return (
-    <Container>
+    <Container id={STATES.appMode.contact}>
       <Header title="Contact Me" />
       <InnerContainer>
       <FriendlyMessageContainer>

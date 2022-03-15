@@ -3,10 +3,11 @@ import {Container} from './Elements';
 import Project from './Project';
 import Data from './Data';
 import Header from '../Header';
+import {STATES} from '../../constants';
 
 function Portfolio() {
   return (
-    <Container>
+    <Container id={STATES.appMode.portfolio}>
       <Header title="Portfolio" />
       <Project {...Data[0]} />
       <Project {...Data[1]} />

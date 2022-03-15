@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
 export const Container = styled.div`
-  margin-bottom: 12vw;
+  padding-bottom: 12vw;
 `;
 
 export const InnerContainer = styled.div`
-    align-items: center;
-    flex-direction: column;
-    display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
 `;
 
 export const ContactInfoContainer = styled.div`

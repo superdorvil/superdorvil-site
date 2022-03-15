@@ -9,10 +9,11 @@ import {
 import SuperDorvilCollage from '../../images/SuperDorvilCollage.png';
 import Button from '../Button';
 import Header from '../Header';
+import {STATES} from '../../constants';
 
 function About() {
   return (
-    <Container>
+    <Container id={STATES.appMode.about}>
       <Header title="Me, Myself and I" />
       <InnerContainer>
         <CollageContainer>
