@@ -32,13 +32,6 @@ function SideBarButtons() {
         duration={500}>
         {STATES.appMode.contact}
       </SideButton>
-      {/*<SideButton
-          to={STATES.appMode.freedom}
-          spy={true}
-          smooth={true}
-          duration={500}>
-          {STATES.appMode.freedom}
-        </SideButton>*/}
       <SideButton
         to={STATES.appMode.about}
         spy={true}

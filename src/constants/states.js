@@ -4,7 +4,6 @@ const STATES = {
     portfolio: 'Portfolio',
     skills: 'Skills',
     contact: 'Contact',
-    freedom: 'Freedom',
     about: 'About',
   },
   projectMode: {
