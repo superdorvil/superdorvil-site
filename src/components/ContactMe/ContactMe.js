@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import {useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import {
   Container,
   ContactInfoContainer,
@@ -11,82 +12,40 @@ import {
   FriendlyMessage,
 } from './Elements';
 import Header from '../Header';
-import Button from '../Button';
+import FormButton from '../FormButton';
 import {STATES} from '../../constants';
 
-function useNameInput(defaultValue) {
-  const [name, setName] = useState('');
-
-  function onChange(e) {
-    setName(e.target.value);
-  }
-
-  return {
-    name,
-    onChange,
-  };
-}
-
-function useEmailInput() {
-  const [email, setEmail] = useState('');
-
-  function onChange(e) {
-    setEmail(e.target.value);
-  }
-
-  return {
-    email,
-    onChange,
-  };
-}
-
-function usePhoneInput() {
-  const [phone, setPhone] = useState('');
-
-  function onChange(e) {
-    setPhone(e.target.value);
-  }
-
-  return {
-    phone,
-    onChange,
-  };
-}
-
-function useMessageInput() {
-  const [message, setMessage] = useState('');
-
-  function onChange(e) {
-    setMessage(e.target.value);
-  }
-
-  return {
-    message,
-    onChange,
-  };
-}
-
 function ContactMe() {
-  const nameProps = useNameInput();
-  const emailProps = useEmailInput();
-  const phoneProps = usePhoneInput();
-  const messageProps = useMessageInput();
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_79eljpf', 'superdorvil_contact_me', form.current, 'xX7pQgYsfreBrNEAp')
+      .then((result) => {
+          console.log(result.text);
+          window.alert('Message sent, I will respond as soon as possible.');
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+          window.alert('Message not sent, sorry, send an email to Dgabriel999@gmail.com');
+      });
+  };
 
   return (
-    <Container id={STATES.appMode.contact}>
+    <Container id={STATES.appMode.contact} ref={form} onSubmit={sendEmail}>
       <Header title="Contact Me" />
       <InnerContainer>
-      <FriendlyMessageContainer>
-        <FriendlyMessage>I will make you a killer Blockchain DAPP</FriendlyMessage>
-        <FriendlyMessage>Hit me up!!!</FriendlyMessage>
-      </FriendlyMessageContainer>
-      <Name {...nameProps} placeholder="Enter Name: " />
-      <ContactInfoContainer>
-        <Email {...emailProps} placeholder="Enter Email: " />
-        <Phone {...phoneProps} placeholder="Enter Phone: " />
-      </ContactInfoContainer>
-      <Message {...messageProps} placeholder="Enter Message: " />
-      <Button description="Submit" />
+        <FriendlyMessageContainer>
+          <FriendlyMessage>I will make you a killer Blockchain DAPP</FriendlyMessage>
+          <FriendlyMessage>Hit me up!!!</FriendlyMessage>
+        </FriendlyMessageContainer>
+        <Name type="text" placeholder="Enter Name: " name="name" />
+        <ContactInfoContainer>
+          <Email type="email" placeholder="Enter Email: " name="email" />
+          <Phone type="number" placeholder="Enter Phone: " name="phone" />
+        </ContactInfoContainer>
+        <Message type="text" placeholder="Enter Message: " name="message" />
+        <FormButton value="Submit" />
       </InnerContainer>
     </Container>
   )

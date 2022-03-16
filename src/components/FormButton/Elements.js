@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
-export const Container = styled.button`
+export const Container = styled.input`
   display: flex;
   flex: 1;
   align-items: center;
@@ -10,21 +10,15 @@ export const Container = styled.button`
   border: 0px;
   border-radius: 3vw;
   cursor: pointer;
-  &:hover {
-    background: #FFFFFF;
-    transition: all 0.1s ease-in-out;
-  }
+  font-size: 1.75vw;
+  color: #FFFFFF;
   padding-left: 3vw;
   padding-right: 3vw;
-`;
-
-export const Description = styled.p`
   padding-top: 1.75vw;
   padding-bottom: 1.75vw;
-  font-size: 1.75vw;
-  color: white;
   font-family: Montserrat-Bold;
   &:hover {
+    background: #FFFFFF;
     color: ${COLORS.BAD_ASS_ORANGE};
     transition: all 0.1s ease-in-out;
   }

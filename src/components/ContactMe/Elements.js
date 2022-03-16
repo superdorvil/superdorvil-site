@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
-export const Container = styled.div`
+export const Container = styled.form`
   padding-bottom: 12vw;
 `;
 
@@ -88,7 +88,7 @@ export const Message = styled.textarea`
   border-color: ${COLORS.BAD_ASS_ORANGE};
   border-radius: 2vw;
   margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
   padding: 1.5vw;
   padding-left: 3vw;
   padding-right: 3vw;
