@@ -1,16 +1,13 @@
 import {Container, Description} from './Elements';
 import SocialIcon from '../SocialMediaIcons/SocialIcon';
 
-function Button({description, buttonPressed}) {
+function LinkButton({description, icon, href}) {
   return (
-    <Container
-      onClick={(e) => {
-        e.preventDefault();
-        buttonPressed();
-      }}>
+    <Container href={href}>
       <Description>{description}</Description>
+      <SocialIcon icon={icon} small={true} />
     </Container>
   );
 }
 
-export default Button;
+export default LinkButton;

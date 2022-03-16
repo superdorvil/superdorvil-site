@@ -21,7 +21,7 @@ export const ProjectContainer = styled.div`
   align-items: center;
 `;
 
-export const ButtonContainer = styled.a`
+export const ButtonContainer = styled.div`
   margin-top: 2.5vw;
   margin-bottom: 2.5vw;
 `;

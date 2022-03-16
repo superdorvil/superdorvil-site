@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
-export const Container = styled.button`
+export const Container = styled.a`
   display: flex;
   flex: 1;
   align-items: center;
@@ -21,6 +21,7 @@ export const Container = styled.button`
 export const Description = styled.p`
   padding-top: 1.75vw;
   padding-bottom: 1.75vw;
+  padding-right: 1.5vw;
   font-size: 1.75vw;
   color: white;
   font-family: Montserrat-Bold;

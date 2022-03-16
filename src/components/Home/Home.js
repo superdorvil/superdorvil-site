@@ -1,11 +1,11 @@
 import {
   Container,
-  ButtonContainer,
   SubTitleContainer,
+  ButtonContainer,
   Title,
   SubTitle
 } from './Elements';
-import Button from '../Button';
+import ScrollButton from '../ScrollButton';
 import {STATES} from '../../constants';
 
 function Home() {
@@ -18,12 +18,14 @@ function Home() {
         <SubTitle>Liberating the world one DAPP</SubTitle>
         <SubTitle>at a time</SubTitle>
       </SubTitleContainer>
-      <ButtonContainer
-        to={STATES.appMode.contact}
-        spy={true}
-        smooth={true}
-        duration={500}>
-        <Button description="Contact Me" />
+      <ButtonContainer>
+        <ScrollButton
+          to={STATES.appMode.contact}
+          spy={true}
+          smooth={true}
+          duration={500}
+          description="Contact Me"
+          />
       </ButtonContainer>
     </Container>
   )
