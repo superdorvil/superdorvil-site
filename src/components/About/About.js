@@ -31,7 +31,7 @@ function About() {
         SuperDorvil
         </Message>
         <Button description="Click Me" />
-        <Footer>Designed and Built by Dorvil Gabriel aka SuperDorvil 😊</Footer>
+        <Footer>Designed and Built by SuperDorvil 😊</Footer>
       </InnerContainer>
     </Container>
   )
