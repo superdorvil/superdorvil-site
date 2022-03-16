@@ -27,7 +27,7 @@ export const Message = styled.p`
   margin-top: 4vw;
   background-color: transparent;
   font-family: Montserrat-Regular;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
   margin-bottom: 5vw;
 `;
 

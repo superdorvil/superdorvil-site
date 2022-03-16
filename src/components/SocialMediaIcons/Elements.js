@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-self: center;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 `;
 
 export const ButtonContainer = styled.div`

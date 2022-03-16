@@ -51,7 +51,7 @@ export const Job = styled.p`
   margin-top: 12px;
   text-align: center;
   @media only screen and (max-width: 800px) {
-    font-size: 12px;
+    font-size: 8px;
   }
 `;
 

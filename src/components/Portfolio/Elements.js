@@ -49,7 +49,7 @@ export const Title = styled.div`
 
 `;
 
-export const AboutDescription = styled.div`
+export const AboutDescription = styled.p`
   padding: 1vw;
   color: #FFFFFF;
   text-align: center;
