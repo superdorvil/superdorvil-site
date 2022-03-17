@@ -21,9 +21,10 @@ export const ProjectContainer = styled.div`
   align-items: center;
 `;
 
-export const ButtonContainer = styled.div`
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
+export const ButtonContainer = styled.a`
+  position: absolute;
+  right: 3vw;
+  cursor: pointer;
 `;
 
 export const AboutContainer = styled.div`
@@ -39,14 +40,15 @@ export const Divider = styled.div`
   align-items: center;
   height: ${props => props.dividerInvisible ? 0 : 1}px;
   background-color: #FFFFFF;
-  width: 60vw;
-  margin-bottom: 3vw;
+  width: 65vw;
+  margin-bottom: ${props => props.dividerInvisible ? 0 : 5}vw;
+  margin-top: 5vw;
 `;
 
 export const Title = styled.div`
   color: #FFFFFF;
   font-size: 3vw;
-
+  margin-top: 2.25vw;
 `;
 
 export const AboutDescription = styled.p`

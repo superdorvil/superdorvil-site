@@ -1,18 +1,18 @@
 import {Container, ButtonContainer} from './Elements';
-import SocialIcon from './SocialIcon';
-import {ICONS} from '../../constants';
+import {STATES} from '../../constants';
+import EthButton from '../EthButton';
 
 function SocialMediaIcons() {
   return (
     <Container>
-      <ButtonContainer>
-        <SocialIcon icon={ICONS.GITHUB} href="https://github.com/superdorvil" />
+      <ButtonContainer href="https://github.com/superdorvil">
+        <EthButton icon={STATES.icons.github} width={6} />
       </ButtonContainer>
-      <ButtonContainer>
-        <SocialIcon icon={ICONS.TWITTER} href="https://twitter.com/superdorvil" />
+      <ButtonContainer href="https://twitter.com/superdorvil">
+        <EthButton icon={STATES.icons.twitter} width={6} />
       </ButtonContainer>
-      <ButtonContainer>
-        <SocialIcon icon={ICONS.LINKEDIN} href="https://www.linkedin.com/in/dorvil-gabriel-03109178" />
+      <ButtonContainer href="https://www.linkedin.com/in/dorvil-gabriel-03109178">
+        <EthButton icon={STATES.icons.linkedIn} width={6} />
       </ButtonContainer>
     </Container>
   )

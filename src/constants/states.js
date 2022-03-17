@@ -13,6 +13,11 @@ const STATES = {
     lavaDAO: 'LavaLamp DAO',
     ethDAO: 'Ethereum DAO',
   },
+  icons: {
+    github: 'github',
+    twitter: 'twitter',
+    linkedIn: 'linkedIn',
+  },
 };
 
 export default STATES;

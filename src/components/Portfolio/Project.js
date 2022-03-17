@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import {ButtonContainer, ProjectContainer, Divider, Title} from './Elements';
-import LinkButton from '../LinkButton';
 import ProjectImage from './ProjectImage';
 import About from './About';
+import EthButton from '../EthButton';
 import {ICONS} from '../../constants';
 
 function Project({about, skills, title, image, github, dividerInvisible}) {
@@ -14,8 +14,8 @@ function Project({about, skills, title, image, github, dividerInvisible}) {
         <About description={about} />
         <About description={skills} />
       </ProjectContainer>
-      <ButtonContainer>
-        <LinkButton description="Github" icon={ICONS.GITHUB} href={github} />
+      <ButtonContainer href={github}>
+        <EthButton width={7}/>
       </ButtonContainer>
       <Divider dividerInvisible={dividerInvisible} />
     </ProjectContainer>

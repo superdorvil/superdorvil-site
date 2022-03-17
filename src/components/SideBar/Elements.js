@@ -29,7 +29,7 @@ export const PFPContainer = styled.div`
 export const SideBarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 4vw;
+  margin-top: 3vw;
   align-items: center;
   @media only screen and (max-height: 700px) {
     margin-top: 2.5vw;
