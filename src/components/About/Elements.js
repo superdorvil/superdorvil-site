@@ -9,10 +9,31 @@ export const InnerContainer = styled.div`
   flex-direction: column;
 `;
 
-export const CollageContainer = styled.div`
-  padding-top: 4vw;
-  width: 60vw;
-  border-color: ${COLORS.BAD_ASS_ORANGE};
+export const PhotoContainer = styled.div`
+  width: 45vw;
+  margin-top: 4vw;
+  border-radius: 1vw;
+  overflow: hidden;
+`;
+
+export const CarouselContainer = styled.div`
+  margin-left: 15vw;
+`;
+
+export const CarouselButton = styled.div`
+  width: 4vw;
+`;
+
+export const RightButton = styled.div`
+  position: absolute;
+  top: 18vw;
+  right: 6.4vw;
+`;
+
+export const LeftButton = styled.div`
+  position: absolute;
+  top: 18vw;
+  left: -8.6vw;
 `;
 
 export const Message = styled.p`
