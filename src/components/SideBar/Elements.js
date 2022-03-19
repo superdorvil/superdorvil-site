@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const PFPContainer = styled.div`
-  width: 12vw;
+  width: 10vw;
   display: flex;
   border-radius: 1vw;
   align-self: center;
@@ -21,6 +21,9 @@ export const PFPContainer = styled.div`
   margin-top: 60px;
   border: .175vw solid;
   border-color: ${COLORS.BAD_ASS_ORANGE};
+  @media only screen and (max-width: 1000px) {
+    width: 12vw;
+  }
   @media only screen and (max-height: 650px) {
     margin-top: 6vw;
   }
