@@ -3,7 +3,9 @@ import emailjs from '@emailjs/browser';
 import {
   Container,
   ContactInfoContainer,
+  MyEmail,
   FriendlyMessageContainer,
+  SocialMediaContainer,
   InnerContainer,
   Name,
   Email,
@@ -13,6 +15,7 @@ import {
 } from './Elements';
 import Header from '../Header';
 import FormButton from '../FormButton';
+import SocialMediaIcons from '../SocialMediaIcons';
 import {STATES} from '../../constants';
 
 function ContactMe() {
@@ -39,6 +42,9 @@ function ContactMe() {
           <FriendlyMessage>I will make you a killer Blockchain DAPP</FriendlyMessage>
           <FriendlyMessage>Hit me up!!!</FriendlyMessage>
         </FriendlyMessageContainer>
+        <SocialMediaContainer>
+          <SocialMediaIcons />
+        </SocialMediaContainer>
         <Name type="text" placeholder="Enter Name: " name="name" />
         <ContactInfoContainer>
           <Email type="email" placeholder="Enter Email: " name="email" />
@@ -46,6 +52,7 @@ function ContactMe() {
         </ContactInfoContainer>
         <Message type="text" placeholder="Enter Message: " name="message" />
         <FormButton value="Submit" />
+        <MyEmail>dgabriel999@gmail.com</MyEmail>
       </InnerContainer>
     </Container>
   )

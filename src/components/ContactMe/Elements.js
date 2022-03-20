@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {COLORS} from '../../constants';
 
 export const Container = styled.form`
-  padding-bottom: 12vw;
+  padding-bottom: 8vw;
 `;
 
 export const InnerContainer = styled.div`
@@ -24,11 +24,24 @@ export const FriendlyMessageContainer = styled.div`
   align-items: center;
 `;
 
+export const SocialMediaContainer = styled.div`
+  margin-top: 2vw;
+  margin-bottom: 2.5vw;
+`;
+
 export const FriendlyMessage = styled.p`
   color: #FFFFFF99;
   margin-top: .4vw;
   font-family: Montserrat-Regular;
   font-size: 1.5vw;
+`;
+
+export const MyEmail = styled.p`
+  color: ${COLORS.BAD_ASS_ORANGE}99;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  font-family: Montserrat-Bold;
+  font-size: 2vw;
 `;
 
 export const Name = styled.input`
