@@ -4,36 +4,16 @@ import {COLORS} from '../../constants';
 export const Container = styled.div``;
 
 export const InnerContainer = styled.div`
+  padding-top: 3vw;
   display: flex;
   align-items: center;
   flex-direction: column;
 `;
 
 export const PhotoContainer = styled.div`
-  width: 45vw;
-  margin-top: 4vw;
+  width: 35vw;
   border-radius: 1vw;
   overflow: hidden;
-`;
-
-export const CarouselContainer = styled.div`
-  margin-left: 15vw;
-`;
-
-export const CarouselButton = styled.div`
-  width: 4vw;
-`;
-
-export const RightButton = styled.div`
-  position: absolute;
-  top: 18vw;
-  right: 6.4vw;
-`;
-
-export const LeftButton = styled.div`
-  position: absolute;
-  top: 18vw;
-  left: -8.6vw;
 `;
 
 export const Message = styled.p`
@@ -42,14 +22,11 @@ export const Message = styled.p`
   border-color: ${COLORS.BAD_ASS_ORANGE};
   border-radius: 2vw;
   color: #FFFFFF;
-  padding: 1.5vw;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  margin-top: 4vw;
+  padding: 1.25vw;
   background-color: transparent;
   font-family: Montserrat-Regular;
   font-size: 1.5vw;
-  margin-bottom: 5vw;
+  margin-top: 4vw;
 `;
 
 export const Footer = styled.p`
@@ -57,4 +34,6 @@ export const Footer = styled.p`
   padding-bottom: 5vw;
   color: #FFFFFF99;
   font-size: 1.5vw;
+  text-align: center;
+  padding-bottom: 5vw;
 `;
