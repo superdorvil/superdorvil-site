@@ -11,7 +11,7 @@ function SocialMediaIcons() {
       <ButtonContainer href="https://twitter.com/superdorvil">
         <EthButton icon={STATES.icons.twitter} width={6} />
       </ButtonContainer>
-      <ButtonContainer href="https://www.linkedin.com/in/dorvil-gabriel-03109178">
+      <ButtonContainer href="https://www.linkedin.com/in/dorvil-gabriel">
         <EthButton icon={STATES.icons.linkedIn} width={6} />
       </ButtonContainer>
     </Container>
