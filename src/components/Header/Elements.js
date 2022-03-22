@@ -4,13 +4,13 @@ import {COLORS} from '../../constants';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom:32px;
+  margin-bottom: 8vw;
 `;
 
 export const Title = styled.p`
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
   font-size: 6vw;
   color: ${COLORS.BAD_ASS_ORANGE};
   font-family: Montserrat-Regular;

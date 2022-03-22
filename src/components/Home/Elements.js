@@ -29,4 +29,7 @@ export const SubTitle = styled.p`
   font-size: 1.65vw;
   color: #FFFFFF99;
   font-family: Montserrat-Regular;
+  @media only screen and (max-width: 500px) {
+    font-size: 2.15vw;
+  }
 `;

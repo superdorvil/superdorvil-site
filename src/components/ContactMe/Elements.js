@@ -34,6 +34,9 @@ export const FriendlyMessage = styled.p`
   margin-top: .4vw;
   font-family: Montserrat-Regular;
   font-size: 1.5vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 2vw;
+  }
 `;
 
 export const MyEmail = styled.p`
@@ -42,6 +45,9 @@ export const MyEmail = styled.p`
   margin-bottom: 3vw;
   font-family: Montserrat-Bold;
   font-size: 2vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 2.5vw;
+  }
 `;
 
 export const Name = styled.input`

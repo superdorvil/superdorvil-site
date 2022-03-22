@@ -78,4 +78,7 @@ export const SideButton = styled(LinkS)`
     background-color: #FFFFFF;
     color: ${COLORS.BAD_ASS_ORANGE};
   }
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 `;

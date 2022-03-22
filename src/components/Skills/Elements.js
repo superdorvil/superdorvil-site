@@ -10,6 +10,9 @@ export const Skill = styled.p`
   font-size: 2.5vw;
   margin-left: 6vw;
   margin-top: 3vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 3vw;
+  }
 `;
 
 export const Languages = styled.p`
@@ -18,4 +21,7 @@ export const Languages = styled.p`
   margin-left: 12vw;
   margin-top: 1vw;
   width: 60vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 2vw;
+  }
 `;

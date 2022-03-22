@@ -20,4 +20,7 @@ export const Description = styled.p`
     color: ${COLORS.BAD_ASS_ORANGE};
     transition: all 0.1s ease-in-out;
   }
+  @media only screen and (max-width: 500px) {
+    font-size: 2.25vw;
+  }
 `;

@@ -27,6 +27,9 @@ export const Message = styled.p`
   font-family: Montserrat-Regular;
   font-size: 1.5vw;
   margin-top: 4vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 2vw;
+  }
 `;
 
 export const Footer = styled.p`
@@ -36,4 +39,7 @@ export const Footer = styled.p`
   font-size: 1.5vw;
   text-align: center;
   padding-bottom: 5vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 2vw;
+  }
 `;

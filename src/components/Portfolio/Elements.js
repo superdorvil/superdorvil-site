@@ -49,6 +49,9 @@ export const Title = styled.div`
   color: #FFFFFF;
   font-size: 3vw;
   margin-top: 2.25vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 3.5vw;
+  }
 `;
 
 export const AboutDescription = styled.p`
@@ -56,4 +59,7 @@ export const AboutDescription = styled.p`
   color: #FFFFFF;
   text-align: center;
   font-size: 1.5vw;
+  @media only screen and (max-width: 500px) {
+    font-size: 2vw;
+  }
 `;
