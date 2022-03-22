@@ -64,11 +64,18 @@ export const SideButton = styled(LinkS)`
   padding-top: 6px;
   color: #FFFFFF99;
   font-family: Montserrat-Regular;
+  width: 25vw;
+  text-align: center;
+  cursor: pointer;
   @media only screen and (max-width: 700px) {
     font-size: 20px;
   }
   &.active {
     font-family: Montserrat-Bold;
+    color: ${COLORS.BAD_ASS_ORANGE};
+  }
+  &:hover {
+    background-color: #FFFFFF;
     color: ${COLORS.BAD_ASS_ORANGE};
   }
 `;
